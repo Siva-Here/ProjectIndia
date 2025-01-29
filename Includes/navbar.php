@@ -1,0 +1,262 @@
+<?php
+// Navbar.php
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'royal-blue': {
+                            DEFAULT: '#4169E1',
+                            '50': '#EEF1FC',
+                            '100': '#D9E0F9',
+                            '200': '#B0BFF2',
+                            '300': '#879DEB',
+                            '400': '#5E7CE4',
+                            '500': '#4169E1',
+                            '600': '#2650CB',
+                            '700': '#1D3D9B',
+                            '800': '#152B6B',
+                            '900': '#0C1A3B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media (min-width: 1024px) {
+            .group:hover .group-hover\:block {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="fixed top-0 w-full bg-white shadow-md z-50 border-b border-royal-blue-200">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/ProjectIndia" class="flex items-center">
+                <img src="./Images/projectIndia.png" alt="Project India Logo" class="h-10">
+                <span class="text-royal-blue-800 ml-2 text-xl font-semibold">Project India</span>
+            </a>
+
+            <!-- Mobile menu button -->
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-royal-blue-400 hover:text-royal-blue-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex lg:items-center">
+                <div class="flex space-x-4 items-center" id="nav-items">
+                    <a href="/ProjectIndia" class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium">Home</a>
+                    
+                    <!-- About Dropdown -->
+                    <div class="relative group">
+                        <button class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium flex items-center">
+                            About
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block border border-royal-blue-200">
+                            <div class="py-1">
+                                <a href="/history" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">History</a>
+                                <a href="/faculty" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Faculty & Staff</a>
+                                <a href="/student-life" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Student Life</a>
+                                <a href="/map" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Riverside Map</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Join Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium flex items-center">
+                            Join Us
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block border border-royal-blue-200">
+                            <div class="py-1">
+                                <a href="/application" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Application</a>
+                                <a href="/fees" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Fees</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yearbook Dropdown -->
+                    <div class="relative group">
+                        <button class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium flex items-center">
+                            Yearbook
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block border border-royal-blue-200">
+                            <div class="py-1">
+                                <a href="/ProjectIndia/files/test.pdf" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Yearbook 2015-2016</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/alumni" class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium">Alumni</a>
+
+                    <!-- News Dropdown -->
+                    <div class="relative group">
+                        <button class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium flex items-center">
+                            News
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block border border-royal-blue-200">
+                            <div class="py-1">
+                                <a href="/ProjectIndia/news.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Videos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/ProjectIndia/events.php" class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium">Events</a>
+                    <a href="/ProjectIndia/contact.php" class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium">Contact Us</a>
+                    <button id="search-toggle" class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Search Input -->
+                <div id="search-container" class="hidden flex-1 max-w-xl mx-4">
+                    <div class="relative">
+                        <input type="text" placeholder="Search..." class="w-full px-4 py-2 rounded-lg border border-royal-blue-300 focus:outline-none focus:ring-2 focus:ring-royal-blue-400 focus:border-royal-blue-500">
+                        <button id="search-close" class="absolute right-3 top-2.5 text-royal-blue-500 hover:text-royal-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-royal-blue-800 mt-2">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/ProjectIndia" class="block px-3 py-2 text-white font-medium">Home</a>
+                
+                <div class="mobile-dropdown">
+                    <button class="w-full text-left px-3 py-2 text-white font-medium flex justify-between items-center">
+                        About
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="hidden pl-4">
+                        <a href="/history" class="block px-3 py-2 text-royal-blue-100">History</a>
+                        <a href="/faculty" class="block px-3 py-2 text-royal-blue-100">Faculty & Staff</a>
+                        <a href="/student-life" class="block px-3 py-2 text-royal-blue-100">Student Life</a>
+                        <a href="/map" class="block px-3 py-2 text-royal-blue-100">Riverside Map</a>
+                    </div>
+                </div>
+
+                <div class="mobile-dropdown">
+                    <button class="w-full text-left px-3 py-2 text-white font-medium flex justify-between items-center">
+                        Join Us
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="hidden pl-4">
+                        <a href="/application" class="block px-3 py-2 text-royal-blue-100">Application</a>
+                        <a href="/fees" class="block px-3 py-2 text-royal-blue-100">Fees</a>
+                    </div>
+                </div>
+
+                <div class="mobile-dropdown">
+                    <button class="w-full text-left px-3 py-2 text-white font-medium flex justify-between items-center">
+                        Yearbook
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="hidden pl-4">
+                        <a href="/ProjectIndia/files/test.pdf" class="block px-3 py-2 text-royal-blue-100">Yearbook 2015-2016</a>
+                    </div>
+                </div>
+
+                <a href="/alumni" class="block px-3 py-2 text-white font-medium">Alumni</a>
+
+                <div class="mobile-dropdown">
+                    <button class="w-full text-left px-3 py-2 text-white font-medium flex justify-between items-center">
+                        News
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="hidden pl-4">
+                        <a href="/videos" class="block px-3 py-2 text-royal-blue-100">Videos</a>
+                    </div>
+                </div>
+
+                <a href="/ProjectIndia/events.php" class="block px-3 py-2 text-white font-medium">Events</a>
+                <a href="/ProjectIndia/contact.php" class="block px-3 py-2 text-white font-medium">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // Search Toggle
+    const searchToggle = document.getElementById('search-toggle');
+    const searchContainer = document.getElementById('search-container');
+    const navItems = document.getElementById('nav-items');
+    const searchClose = document.getElementById('search-close');
+
+    searchToggle.addEventListener('click', () => {
+        navItems.classList.add('hidden');
+        searchContainer.classList.remove('hidden');
+        searchContainer.classList.add('flex');
+        document.querySelector('#search-container input').focus();
+    });
+
+    searchClose.addEventListener('click', () => {
+        navItems.classList.remove('hidden');
+        searchContainer.classList.add('hidden');
+        searchContainer.classList.remove('flex');
+    });
+
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Mobile dropdowns
+    document.querySelectorAll('.mobile-dropdown button').forEach(button => {
+        button.addEventListener('click', function() {
+            this.nextElementSibling.classList.toggle('hidden');
+        });
+    });
+
+    // Desktop dropdowns
+    document.querySelectorAll('.group').forEach(group => {
+        const dropdown = group.querySelector('.group-hover\\:block');
+        let timeout;
+
+        group.addEventListener('mouseenter', () => {
+            clearTimeout(timeout);
+            dropdown.classList.remove('hidden');
+        });
+
+        group.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => {
+                dropdown.classList.add('hidden');
+            }, 200);
+        });
+
+        dropdown.addEventListener('mouseenter', () => clearTimeout(timeout));
+        dropdown.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => dropdown.classList.add('hidden'), 200);
+        });
+    });
+</script>
+
+</body>
+</html>
+
