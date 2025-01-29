@@ -8,18 +8,40 @@
         <title>Faculty</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            mode: 'jit',
-            theme: {
-                extend: {},
-            },
-            variants: {},
-            plugins: [],
-        }
-    </script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'royal-blue': {
+                                DEFAULT: '#4169E1',
+                                '50': '#EEF1FC',
+                                '100': '#D9E0F9',
+                                '200': '#B0BFF2',
+                                '300': '#879DEB',
+                                '400': '#5E7CE4',
+                                '500': '#4169E1',
+                                '600': '#2650CB',
+                                '700': '#1D3D9B',
+                                '800': '#152B6B',
+                                '900': '#0C1A3B',
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+        <style>
+            @media (min-width: 1024px) {
+                .group:hover .group-hover\:block {
+                    display: block;
+                }
+            }
+        </style>
     </head>
-    <body className="p-[10px]">
+    <body>
+        <?php include '../navbar.php'; ?>
+    <div class="p-[10px] mt-[50px]">
             <div><img src="../../Images/Faculty & Staff _ Project India/DSCN1784.jpg"alt="name"class="w-full"></div>
             <div class="flex flex-col pt-[20px] lg:pl-[200px] lg:pr-[200px]">
             <div class="text-4xl pt-[10px] p-[20px]">Faculty and Staff</div>
@@ -242,6 +264,6 @@
 
 
        
-
+            </div>
     </body>
 </html>

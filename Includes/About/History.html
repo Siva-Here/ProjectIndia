@@ -9,17 +9,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            mode: 'jit',
             theme: {
-                extend: {},
-            },
-            variants: {},
-            plugins: [],
+                extend: {
+                    colors: {
+                        'royal-blue': {
+                            DEFAULT: '#4169E1',
+                            '50': '#EEF1FC',
+                            '100': '#D9E0F9',
+                            '200': '#B0BFF2',
+                            '300': '#879DEB',
+                            '400': '#5E7CE4',
+                            '500': '#4169E1',
+                            '600': '#2650CB',
+                            '700': '#1D3D9B',
+                            '800': '#152B6B',
+                            '900': '#0C1A3B',
+                        }
+                    }
+                }
+            }
         }
     </script>
+    <style>
+        @media (min-width: 1024px) {
+            .group:hover .group-hover\:block {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <?php include '../navbar.php'; ?>
+    <div class="mt-[70px]">
         <div class="h-[450px] w-[100%]">
             <img src="../../Images/Subbamma-house-1974a.jpg" alt="Image description" class="w-full h-[450px] object-cover" />
         </div>
