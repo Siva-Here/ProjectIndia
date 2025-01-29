@@ -85,7 +85,8 @@
     </style>
 </head>
 <body>
-    <div class="flex flex-col gap-8">
+<?php include '../navbar.php'; ?>
+    <div class="flex flex-col gap-8 mt-[50px]">
         <div class="w-full h-[300px] md:h-[550px]">
             <img src="../../Images/studentgroup.jpg" alt="students" class="w-full h-full">
         </div>

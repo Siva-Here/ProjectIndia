@@ -20,7 +20,8 @@
 </head>
 <body>
     <div class="flex flex-col items-center justify-center gap-4">
-        <div class="w-[96%] md:w-[80%] mx-auto overflow-x-auto">
+    <?php include '../navbar.php'; ?>
+        <div class="w-[96%] md:w-[80%] mx-auto overflow-x-auto mt-[70px]">
             <table class="min-w-full table-auto border-collapse border border-gray-300">
                 <!-- Table Title Row -->
                 <thead>
@@ -127,7 +128,7 @@
               </table>
               
         </div>
-        <div class='w-[96%] md:w-[80%] mx-auto overflow-x-auto'>
+        <div class='w-[96%] md:w-[80%] mx-auto overflow-x-auto mb-10'>
             <table class="min-w-full border-collapse border border-gray-300">
                 <!-- Table Title -->
                  <caption class="text-center text-4xl my-6 font-bold text-gray-800">Hostel Fees</caption>

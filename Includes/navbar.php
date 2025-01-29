@@ -71,10 +71,11 @@
                         </button>
                         <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block border border-royal-blue-200">
                             <div class="py-1">
-                                <a href="/history" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">History</a>
-                                <a href="/faculty" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Faculty & Staff</a>
-                                <a href="/student-life" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Student Life</a>
-                                <a href="/map" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Riverside Map</a>
+                                <a href="/projectIndia/Includes/About/about.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">About</a>
+                                <a href="/projectIndia/Includes/About/history.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">History</a>
+                                <a href="/projectIndia/Includes/About/faculty.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Faculty & Staff</a>
+                                <a href="/projectIndia/Includes/About/studentLife.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Student Life</a>
+                                <a href="/projectIndia/Includes/About/roadMap.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Riverside Map</a>
                             </div>
                         </div>
                     </div>
@@ -87,8 +88,9 @@
                         </button>
                         <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block border border-royal-blue-200">
                             <div class="py-1">
-                                <a href="/application" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Application</a>
-                                <a href="/fees" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Fees</a>
+                            <a href="/projectIndia/Includes/JoinUs/join.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Join</a>
+                                <a href="/projectIndia/Includes/JoinUs/application.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Application</a>
+                                <a href="/projectIndia/Includes/JoinUs/feez.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Fees</a>
                             </div>
                         </div>
                     </div>

@@ -55,7 +55,8 @@
     </style>
   </head>
   <body class="flex flex-col justify-center items-center gap-6">
-    <div class="w-full h-[330px] md:h-[500px]">
+  <?php include '../navbar.php'; ?>
+    <div class="w-full h-[330px] md:h-[500px] mt-[70px]">
       <img src="../../Images/brighten.jpg" alt="joinus" class="w-full h-full" />
     </div>
     <div class="flex flex-col mx-4 justify-center items-center text-center gap-4">

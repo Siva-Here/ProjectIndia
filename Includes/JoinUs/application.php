@@ -18,10 +18,14 @@
         }
     </script>
 </head>
-<body>
-    <div class="flex items-center justify-center w-full">
-        <img src="../../Images/Faculty & Staff _ Project India/Projectmap.jpg" alt="project map" class="md:w-[800px] h-[600px] w-[95%]">
-    </div>
+<body class="flex justify-center h-screen items-center">
+<?php include '../navbar.php'; ?>
+    <div class="w-[95%] md:w-[70%] h-[600px] bg-blue-400 overflow-y-scroll mt-[70px]">
+        <div class="w-full h-[1000px] text-4xl">
+Application form
+        </div>
 
+    </div>
+    
 </body>
 </html>
