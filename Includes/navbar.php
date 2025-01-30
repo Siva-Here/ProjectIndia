@@ -103,12 +103,13 @@
                         </button>
                         <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block border border-royal-blue-200">
                             <div class="py-1">
+                            <a href="/ProjectIndia/Includes/About/yearbook.php" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Yearbook</a>
                                 <a href="/ProjectIndia/files/test.pdf" class="block px-4 py-2 text-royal-blue-500 hover:bg-royal-blue-100">Yearbook 2015-2016</a>
                             </div>
                         </div>
                     </div>
 
-                    <a href="/alumni" class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium">Alumni</a>
+                    <a href="/ProjectIndia/Includes/About/alumni.php" class="text-royal-blue-400 hover:text-royal-blue-700 px-3 py-2 font-medium">Alumni</a>
 
                     <!-- News Dropdown -->
                     <div class="relative group">

@@ -32,7 +32,8 @@
     </script>
 </head>
 <body>
-    <div>
+<?php include '../navbar.php'; ?>
+    <div class="mt-[70px]">
         <div class="flex flex-col">
             <div>
                 <img src="../../Images/Yearbook/DSC_0275-2.jpg" class="h-[500px] w-[100%]"/>

@@ -82,6 +82,7 @@
     </style>
 </head>
 <body>
+<?php include '../navbar.php'; ?>
     <div class="flex flex-col gap-8 mt-[50px]">
         <div class="swiper-container  md:h-[500px]">
             <div class="swiper-wrapper">
